@@ -31,7 +31,6 @@ const LoginModal = () => {
     },
   });
 
-
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
@@ -53,7 +52,6 @@ const LoginModal = () => {
     });
   };
 
-  
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading title="Welcome back" subtitle="Login to your account!" />
@@ -91,7 +89,7 @@ const LoginModal = () => {
         outline
         label="Continue With Github"
         icon={AiFillGithub}
-        onClick={() => {}}
+        onClick={() => signIn("github")}
       />
       <div className=" text-neutral-500 text-center mt-4 font-light">
         <div className="flex flex-row items-center justify-center gap-2">
